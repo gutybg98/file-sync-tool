@@ -70,6 +70,7 @@ class Synchronization:
             self.logger.info(message)
             Synchronization.messages.add(message)
             return True
+        return False
 
     def logging(self, dcmp: filecmp.dircmp):
         """
