@@ -118,10 +118,10 @@ class Synchronization:
             if Synchronization.files_to_delete:
                 for file in Synchronization.files_to_delete:
                     os.remove(file)
-            sys.stdout.write(f'Success! All folders are up to date.\n')
+            sys.stdout.write('Success! All folders are up to date.\n')
             sys.stdout.write('Press Ctrl-C to stop the program\n')
             sys.stdout.write(f'Listening to {src_path}...\n')
-            self.logger.info("A full copy was made")
+            self.logger.info('A full copy was made')
         except Exception as e:
             sys.stdout.write(e.__str__())
 
